@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import logo from "../assets/logo.png";
+import Image from "~/components/core/Image/Image";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,7 +15,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>imconstancelouise</h1>
+      <Image src={logo} />
     </div>
   );
 }
