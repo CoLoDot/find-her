@@ -1,0 +1,26 @@
+.Button {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 60px;
+    line-height: 60px;
+    max-width: 275px;
+    padding: 0 40px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 60px auto;
+    text-decoration: none;
+    outline-width: 0;
+    cursor: pointer
+}
+
+.Button:not(:disabled):hover, 
+.Button:not(:disabled):active, 
+.button:not(:disabled):focus {
+    background-color: #124B4D;
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+    color: #FFFFFF;
+  }
