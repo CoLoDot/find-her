@@ -10,10 +10,12 @@
     text-align: center;
     width: 100%;
     display: block;
-    margin: 60px auto;
+    margin: 30px auto;
     text-decoration: none;
     outline-width: 0;
-    cursor: pointer
+    cursor: pointer;
+    text-transform: capitalize;
+    box-sizing: border-box;
 }
 
 .Button:not(:disabled):hover, 

@@ -1,4 +1,4 @@
-import styles from "../components/Button.module.css";
+import styles from "../Button/Button.module.css";
 
 export default function Button({
   href,

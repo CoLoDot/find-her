@@ -1,6 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
 import logo from "../assets/logo.png";
 import Image from "~/components/core/Image/Image";
+import { LINKS } from "~/constants";
+import styles from "./Index.module.css";
+import ButtonsList from "~/components/core/ButtonsList/ButtonsList";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,8 +17,11 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <Image src={logo} />
+    <div className={styles.Index}>
+      <div className={styles.header_wrapper}>
+        <Image src={logo} />
+      </div>
+      <ButtonsList links={LINKS} />
     </div>
   );
 }
