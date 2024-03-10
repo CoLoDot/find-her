@@ -4,15 +4,22 @@ export default function Button({
   href,
   label,
   target = "",
+  type,
   style = styles.Button,
 }: {
-  href: string;
   label: string;
+  href?: string;
   style?: string;
   target?: string;
+  type?: string;
 }) {
   return (
-    <a className={`${style}`} href={`${href}`} target={`${target}`}>
+    <a
+      className={`${style}`}
+      href={`${href}`}
+      target={`${target}`}
+      type={`${type}`}
+    >
       {label}
     </a>
   );

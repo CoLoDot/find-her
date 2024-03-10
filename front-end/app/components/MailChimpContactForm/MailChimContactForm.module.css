@@ -1,0 +1,42 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px 20px 0 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.email_field {
+    width: 100%;
+    max-width: 500px;
+}
+
+.email_label {
+    font-size: small;
+    margin-top: 0;
+    line-height: 0.3;
+}
+
+.email_input {
+    font-size: small;
+    border:none;
+    padding: 10px;
+    background-color: gainsboro;
+    outline: none;
+    opacity: 0.4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.email_input:hover,
+.email_input:focus,
+.email_input:active {
+    opacity: 0.6;
+}

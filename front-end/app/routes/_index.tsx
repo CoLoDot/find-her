@@ -4,6 +4,7 @@ import Image from "~/components/core/Image/Image";
 import { LINKS } from "~/constants";
 import styles from "./Index.module.css";
 import ButtonsList from "~/components/core/ButtonsList/ButtonsList";
+import MailChimpContactForm from "~/components/MailChimpContactForm/MailChimpContactForm";
 
 export const meta: MetaFunction = () => {
   return [
@@ -22,6 +23,9 @@ export default function Index() {
         <Image src={logo} />
       </div>
       <ButtonsList links={LINKS} />
+      <div className={styles.footer_wrapper}>
+        <MailChimpContactForm />
+      </div>
     </div>
   );
 }

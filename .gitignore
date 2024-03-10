@@ -1,0 +1,8 @@
+front-end/node_modules
+
+front-end/.cache
+front-end/build
+front-end/public/build
+
+.env
+
